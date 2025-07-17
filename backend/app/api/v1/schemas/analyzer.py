@@ -51,7 +51,7 @@ class CodeAnalyzeRequest(BaseModel):
     
     context: Optional[str] = Field(
         default=None,
-        max_length=1000,
+        max_length=50000,
         description="代码上下文信息，如项目背景、使用场景等"
     )
     
